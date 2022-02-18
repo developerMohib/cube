@@ -1,0 +1,217 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #050505;
+}
+
+
+/* --------------------Cube 1------------------- */
+
+.text h3{
+    position: relative;
+    animation: animated 15s ease-in-out infinite;
+}
+@keyframes animated {
+    0%{
+        left:0px; top:0px;
+    }
+    50%{
+        left:850px; top:0px;
+    }
+    100%{
+        left:0px; top:0px;
+    }
+}
+.text h4{
+    position: relative;
+    animation: name 15s ease-in-out infinite;
+}
+@keyframes name {
+    0%{
+        left:0px; top:0px;
+    }
+    50%{
+        left:0px; top:500px;
+    }
+    100%{
+        left:0px; top:0px;
+    }
+}
+.Animation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+
+.cube{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    transform-style: preserve-3d;
+    transform:rotateX(-30deg) ;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+
+.cube div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 130%;
+    width: 130%;
+    transform-style: preserve-3d;
+}
+.cube div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#151515, #00ec00);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(130px);
+}
+.top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 200px;
+    transform: rotateX(90deg) translateZ(130px);
+    background: #222;
+}
+.top::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left:0 ;
+    height: 200px;
+    width: 200px;
+    background: #0f0;
+    transform: translateZ(-350px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba(0, 255, 0, 0.2), 
+    0 0 200px rgba(0, 255, 0, 0.4), 
+    0 0 300px rgba(0, 255, 0, 0.6), 
+    0 0 400px rgba(0, 255, 0, 0.8), 
+    0 0 500px rgba(0, 255, 0, 1);
+}
+
+/* --------------------Cube 2------------------- */
+
+.CUBE{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    transform-style: preserve-3d;
+    transform:rotateX(-30deg) ;
+    animation: animate 5s linear infinite;
+}
+.CUBE div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 130%;
+    width: 130%;
+    transform-style: preserve-3d;
+}
+.CUBE div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#fc0303, #0603c7);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(130px);
+}
+.ox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 200px;
+    transform: rotateX(90deg) translateZ(130px);
+    background: rgba(5, 7, 112, 0.837);
+}
+.ox::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left:0 ;
+    height: 200px;
+    width: 200px;
+    background: rgb(28, 7, 218);
+    transform: translateZ(-350px);
+    filter: blur(30px);
+    box-shadow: 0 0 120px rgba(39, 22, 100, 0.2),
+    0 0 200px rgba(68, 35, 252, 0.4),
+    0 0 300px rgba(5, 18, 202, 0.6),
+    0 0 400px rgba(3, 10, 105, 0.8),
+    0 0 500px rgba(16, 5, 173, 1);
+}
+
+/* --------------------Cube 3------------------- */
+
+.Cube{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    transform-style: preserve-3d;
+    transform:rotateX(-30deg) ;
+    animation: animate 5s linear infinite;
+}
+.Cube div{
+    position: absolute;
+    top: 100;
+    left: 0;
+    height: 130%;
+    width: 130%;
+    transform-style: preserve-3d;
+}
+.Cube div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#fc0377, #ff0505);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(130px);
+}
+
+.op{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 200px;
+    transform: rotateX(90deg) translateZ(130px);
+    background: rgb(145, 34, 34);
+}
+.op::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left:0 ;
+    height: 200px;
+    width: 200px;
+    background: rgb(253, 4, 100);
+    transform: translateZ(-380px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba(243, 4, 136, 0.2),
+    0 0 200px rgba(247, 51, 110, 0.4),
+    0 0 300px rgba(187, 4, 126, 0.6),
+    0 0 400px rgba(112, 5, 49, 0.8),
+    0 0 500px rgba(255, 0, 170, 1);
+}
